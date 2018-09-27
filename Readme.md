@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Елена Тереховская](https://up.htmlacademy.ru/adaptive/15/user/524673).
-* Наставник: `Неизвестно`.
+* Наставник: [без наставника].
 
 ---
 
