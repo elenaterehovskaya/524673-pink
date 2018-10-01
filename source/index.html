@@ -1,12 +1,150 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="main-nav__logo-link">
+          <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип Pink">
+        </a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Мобильное приложение Пинк</h1>
+
+      <section class="intro">
+        <h2 class="visually-hidden">Установка приложения</h2>
+        <img class="intro__image" src="img/iphone-5-in-hand.png" width="320" height="314" alt="iPhone в руке">
+        <div class="intro__application application">
+          <a class="application__button button" href="https://www.apple.com/ru/itunes/" target="_blank">Скачать приложение</a>
+          <ul class="application__list">
+            <li class="application__item">
+              <a class="application__link" href="https://www.apple.com/ru/itunes/" target="_blank">
+                <img src="img/logo-apple.svg" width="47" height="57" alt="Логотип Apple">
+              </a>
+            </li>
+            <li class="application__item">
+              <a class="application__link" href="https://androidapplications.ru" target="_blank">
+                <img src="img/logo-android.svg" width="43" height="48" alt="Логотип Android">
+              </a>
+            </li>
+            <li class="application__item">
+              <a class="application__link" href="https://www.microsoft.com/ru-ru/store/apps" target="_blank">
+                <img src="img/logo-microsoft.svg" width="44" height="42" alt="Логотип Microsoft">
+              </a>
+            </li>
+          </ul>
+          <p class="application__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <h2 class="visually-hidden">Возможности приложения</h2>
+        <p class="advantages__slogan slogan">Устали от серости мегаполиса?</p>
+        <p class="advantages__slogan slogan">Нам есть, что вам<br> предложить!</p>
+        <div class="advantages__info">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
+        <div class="advantages__photo">
+          <img class="advantages__image" src="img/iphone_screen_3.png" width="157" height="320" alt="iPhone: Всем привет!">
+        </div>
+      </section>
+
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы о приложении</h2>
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <p class="reviews__author">Николай Петров</p>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </li>
+          <li class="reviews__item">
+            <p class="reviews__author">Николай Петров</p>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </li>
+          <li class="reviews__item">
+            <p class="reviews__author">Николай Петров</p>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="tariff">
+        <h2 class="visually-hidden">Выбор тарифного плана приложения</h2>
+        <table class="tariff__list">
+          <tr class="tariff__item">
+            <th class="tariff__plan">
+              <p class="tariff__name">Стандарт</p>
+              <p class="tariff__price">3,99 USD</p>
+            </th>
+          </tr>
+          <tr class="tariff__option">
+            <td class="tariff__filter">Розовый фильтр</td>
+          </tr>
+          <tr class="tariff__option">
+            <td class="tariff__smiley">Смайлики</td>
+
+          </tr>
+          <tr class="tariff__option">
+            <td class="tariff__comments">Комментарии</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="contacts">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <p class="contacts__slogan slogan">Остались вопросы?<br> Свяжитесь с нами!</p>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <p class="contacts__title">Звоните:</p>
+            <p class="contacts__text">+7 (812) 555-66-66</p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__title">Пишите:</p>
+            <p class="contacts__text">mail@htmlacademy.ru</p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__title">Приезжайте в гости:</p>
+            <p class="contacts__text">ул. Большая<br> Конюшенная, 19/8</p>
+          </li>
+        </ul>
+        <div class="contacts__map">
+          <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="Карта офиса">
+        </div>
+      </section>
+    </main>
 
   </body>
 </html>
