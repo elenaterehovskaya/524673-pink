@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
   </head>
 
   <body>
@@ -12,7 +15,7 @@
           <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип Pink">
         </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
+        <ul class="site-list main-nav__list">
           <li class="site-list__item">
             <a class="site-list__link site-list__link--active">Главная</a>
           </li>
@@ -34,9 +37,9 @@
 
       <section class="intro">
         <h2 class="visually-hidden">Установка приложения</h2>
-        <img class="intro__image" src="img/iphone-5-in-hand.png" width="320" height="314" alt="iPhone в руке">
-        <div class="intro__application application">
-          <a class="application__button button" href="https://www.apple.com/ru/itunes/" target="_blank">Скачать приложение</a>
+        <img class="intro__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="iPhone в руке">
+        <div class="application intro__application">
+          <a class="button application__button" href="https://www.apple.com/ru/itunes/" target="_blank">Скачать приложение</a>
           <ul class="application__list">
             <li class="application__item">
               <a class="application__link" href="https://www.apple.com/ru/itunes/" target="_blank">
@@ -60,26 +63,28 @@
 
       <section class="advantages">
         <h2 class="visually-hidden">Возможности приложения</h2>
-        <p class="advantages__slogan slogan">Устали от серости мегаполиса?</p>
-        <p class="advantages__slogan slogan">Нам есть, что вам<br> предложить!</p>
-        <div class="advantages__info">
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <h3 class="advantages__title">Поднимает настроение</h3>
-              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title">Меняет мир вокруг</h3>
-              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title">Заводит новых друзей</h3>
-              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
-        </div>
-        <div class="advantages__photo">
-          <img class="advantages__image" src="img/iphone_screen_3.png" width="157" height="320" alt="iPhone: Всем привет!">
+        <div class="wrapper advantages__wrapper">
+          <p class="advantages__slogan">Устали от серости мегаполиса?</p>
+          <p class="advantages__slogan">Нам есть, что вам<br> предложить!</p>
+          <div class="advantages__info">
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <h3 class="advantages__title">Поднимает настроение</h3>
+                <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__title">Меняет мир вокруг</h3>
+                <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__title">Заводит новых друзей</h3>
+                <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+          </div>
+          <div class="advantages__photo">
+            <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="iPhone: Всем привет!">
+          </div>
         </div>
       </section>
 
@@ -125,7 +130,7 @@
 
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <p class="contacts__slogan slogan">Остались вопросы?<br> Свяжитесь с нами!</p>
+        <p class="contacts__slogan">Остались вопросы?<br> Свяжитесь с нами!</p>
         <ul class="contacts__list">
           <li class="contacts__item">
             <p class="contacts__title">Звоните:</p>
