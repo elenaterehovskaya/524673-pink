@@ -1,0 +1,24 @@
+.contacts {
+  padding-top: 35px;
+  text-align: center;
+  box-shadow: inset 0 0 0 1px red;
+}
+
+.contacts__slogan {
+  margin: 0;
+  font-weight: 300;
+  font-size: 24px;
+  color: $text-dark;
+}
+
+.contacts__list {
+  @include list-reset;
+}
+
+.contacts__title {
+  margin: 0;
+}
+
+.contacts__text {
+  margin: 0;
+}

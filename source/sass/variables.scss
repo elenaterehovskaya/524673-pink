@@ -1,0 +1,22 @@
+// Основные цвета от светлому к темному
+$color-white:        #ffffff;
+$color-grey-light:   #f2f2f2;
+$color-grey:         #e5e5e5;
+$color-pink:         #d22856;
+$color-orange:       #f25b26;
+$color-green-bright: #3dc644;
+$color-green:        #2aab6d;
+$color-blue:         #283645;
+$color-blue-dark:    #1d2631;
+$color-black:        #000000;
+
+$text-light:         $color-white; // цвет текста светлый
+$text-pink:          $color-pink; // цвет текста розовый
+$text-dark:          $color-blue; // цвет текста тёмный
+$text-black:         $color-black; // цвет текста чёрный
+
+
+// Основные размеры экранов
+$mobile-width:       320px;
+$tablet-width:       660px;
+$desktop-width:      960px;

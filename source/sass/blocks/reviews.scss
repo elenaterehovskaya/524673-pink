@@ -1,0 +1,29 @@
+.reviews {
+  width: 280px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: inset 0 0 0 1px red;
+}
+
+.reviews__list {
+  @include list-reset;
+}
+
+.reviews__author {
+  margin: 0;
+  padding-bottom: 11px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: $text-black;
+}
+
+.reviews__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: $text-dark;
+}
