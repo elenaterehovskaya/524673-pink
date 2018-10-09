@@ -1,9 +1,219 @@
 .tariff {
-  width: 320px;
+  padding-bottom: 50px;
+  background: $grey-light url("../img/bg-triangle-white.svg") no-repeat 100% 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 35px;
+    margin-bottom: 67px;
+    background-size: cover;
+  }
+}
+
+.tariff__wrapper {
+  position: relative;
+  width: 280px;
   margin: 0 auto;
-  box-shadow: inset 0 0 0 1px red;
+  padding: 95px 20px 50px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    padding: 90px 20px 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    padding: 155px 10px 45px;
+  }
 }
 
 .tariff__list {
+  width: 840px;
   border-collapse: collapse;
+  transition: transform 0.7s ease-in-out;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.tariff__item {
+  position: relative;
+  color: $text-white;
+  background-color: $blue;
+  border: 2px solid $blue;
+  border-top: none;
+  background-clip: padding-box;
+
+  &:first-child {
+    display: none;
+  }
+
+  &:nth-child(-n+3) {
+    border-right: 2px solid $grey-light;
+  }
+
+  &:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 74px;
+    height: 73px;
+    background: url("../img/bg-hit.svg") no-repeat 0 0;
+  }
+
+  &:nth-child(3)::after {
+    content: "хит";
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    font-weight: 400;
+    font-size: $font-size-sm;
+    line-height: $line-height-md;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: (100% / 4);
+
+    &:first-child {
+      display: table-cell;
+      background-color: transparent;
+      border-bottom: 2px solid $grey;
+      border-left: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+    &:nth-child(3)::before {
+      width: 61px;
+      height: 61px;
+      background: url("../img/bg-hit-tablet.svg") no-repeat 0 0;
+    }
+
+    &:nth-child(3)::after {
+      top: 7px;
+      left: 6px;
+    }
+  }
+}
+
+.tariff__plan {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 6px;
+  font-weight: 700;
+  font-size: $font-size-md;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+    padding-top: 18px;
+    font-size: 16px;
+  }
+}
+
+.tariff__price {
+  margin: 0;
+  padding-bottom: 17px;
+  font-weight: 300;
+  font-size: $font-size-lg;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+    padding-bottom: 11px;
+    font-size: $font-size-md;
+  }
+}
+
+.tariff__option {
+  position: relative;
+  padding: 15px 20px 14px;
+  font-weight: 400;
+  font-size: $font-size-sm;
+  line-height: $line-height-md;
+  color: $text-dark;
+  text-transform: uppercase;
+  background-color: $white;
+  border: 2px solid $grey;
+  border-top: none;
+  background-clip: padding-box;
+
+  &:first-child {
+    display: none;
+  }
+
+  &:nth-child(n+2)::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 17px;
+    width: 31px;
+    height: 23px;
+    background: url("../img/icon-yes.svg") no-repeat 0 0;
+    background-size: cover;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 15px;
+    text-transform: none;
+
+    &:first-child {
+      display: table-cell;
+    }
+
+    &:nth-child(n+2)::after {
+      top: 12px;
+      right: 60px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 20px;
+    font-size: $font-size-md;
+
+    &:nth-child(n+2)::after {
+      top: 18px;
+      right: 100px;
+    }
+  }
+}
+
+.tariff__smiley .tariff__option:nth-child(2)::after,
+.tariff__comments .tariff__option:nth-child(n+2):nth-child(-n+3)::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 17px;
+  width: 27px;
+  height: 27px;
+  background: url("../img/icon-no.svg") no-repeat 0 0;
+
+  @media (min-width: $tablet-width) {
+    top: 9px;
+    right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 17px;
+    right: 100px;
+  }
+}
+
+.tariff__filter span,
+.tariff__smiley span,
+.tariff__comments span {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.tariff__toggles {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

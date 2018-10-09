@@ -1,0 +1,135 @@
+.research {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 65px 0;
+    background-color: $grey-light;
+
+    & br {
+      display: none;
+    }
+  }
+}
+
+.research__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    padding: 0 10px;
+  }
+}
+
+.research__diagram {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    box-sizing: border-box;
+    width: (100% / 2);
+    height: 277px;
+    padding-top: 92px;
+    padding-left: 65px;
+    font-weight: 700;
+    font-size: 96px;
+    color: $text-primary;
+    background: url("../img/icon-timer.svg") no-repeat 0 0;
+    background-size: auto 277px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 56px;
+      left: 18px;
+      width: 178px;
+      height: 178px;
+      border: 13px solid $pink;
+      border-radius: 50%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 298px;
+    height: 346px;
+    padding-top: 110px;
+    padding-left: 80px;
+    font-size: 120px;
+    background-size: auto;
+
+    &::before {
+      top: 70px;
+      left: 25px;
+      width: 220px;
+      height: 220px;
+      border-width: 15px;
+    }
+  }
+}
+
+.research__info {
+  @media (min-width: $tablet-width) {
+    width: (100% / 2);
+    min-height: 210px;
+    margin-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    margin-top: 90px;
+  }
+}
+
+.research__title {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-weight: 700;
+    font-size: $font-size-xl;
+    line-height: 36px;
+    color: $text-black;
+  }
+}
+
+.research__text,
+.research__link {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 7px 0;
+    font-weight: 400;
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
+    color: $text-dark;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 18px 0;
+    font-size: $font-size-md;
+    line-height: $line-height-md;
+  }
+}
+
+.research__link {
+  @media (min-width: $tablet-width) {
+    display: block;
+    color: $text-primary;
+
+    &:hover,
+    &:focus {
+      color: $text-dark;
+    }
+
+    &:active {
+      color: rgba($text-dark, 0.3);
+      text-decoration: none;
+    }
+  }
+}

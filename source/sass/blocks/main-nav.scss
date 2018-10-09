@@ -1,4 +1,146 @@
 .main-nav {
-  padding-top: 20px;
-  background-color: $color-blue;
+  position: relative;
+  z-index: 10;
+}
+
+.main-nav__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba($black, 0.3);
+}
+
+.main-nav__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+}
+
+.main-nav__logo {
+  box-sizing: border-box;
+  display: block;
+  min-height: 67px;
+  padding-top: 22px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 109px;
+    padding-top: 40px;
+    padding-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 26px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 4px;
+    background-color: $white;
+    box-shadow: 0 10px 0 0 $white, 0 20px 0 0 $white;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: $pink;
+    box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 30px;
+    height: 5px;
+    background-color: $white;
+    transition: 0.2s ease-in-out;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
+    background-color: $pink;
+  }
+
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+.main-nav--closed .site-list__item {
+  @media (max-width: $desktop-width - 1px) {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__container {
+  @media (max-width: $desktop-width - 1px) {
+    position: static;
+    height: 258px;
+    background-color: $blue;
+  }
+}
+
+.main-nav--nojs {
+  @media (max-width: $desktop-width - 1px) {
+    & .main-nav__toggle {
+      display: none;
+    }
+
+    & .site-list__item {
+      display: block;
+    }
+
+    & .main-nav__container {
+      position: static;
+      height: 258px;
+      background-color: $blue;
+    }
+  }
 }

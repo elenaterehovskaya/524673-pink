@@ -3,3 +3,10 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin button-reset {
+  font: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
