@@ -4,45 +4,18 @@
   width: 100%;
   padding: 16px 0;
   font-weight: 700;
-  font-size: 18px;
+  font-size: $font-size-md;
   line-height: 18px;
   text-align: center;
   vertical-align: middle;
-  color: $text-light;
   text-decoration: none;
   background-color: transparent;
-  border: 3px solid $color-white;
   border-radius: 30px;
+  outline: none;
+  cursor: pointer;
   transition: 0.3s ease-in-out;
 
-  &:hover,
-  &:focus {
-    color: $text-pink;
-    background-color: $color-white;
-  }
-
-  &:active {
-    color: rgba($text-pink, 0.3);
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
   }
 }
-
-/*
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-
-  font: inherit;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  text-align: center;
-  vertical-align: middle;
-  color: #ffffff;
-
-  background-color: #e74a35;
-  border: none;
-  border-radius: 30px;
-  box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
-  cursor: pointer;
-}
-*/

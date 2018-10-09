@@ -1,0 +1,68 @@
+.slider__toggles {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+
+.slider__toggles label {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 10px;
+  vertical-align: middle;
+  background-color: rgba($blue, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba($blue, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($blue, 0.1);
+  }
+}
+
+.slider__1:checked ~ .slider__toggles .slider__toggle-1,
+.slider__2:checked ~ .slider__toggles .slider__toggle-2,
+.slider__3:checked ~ .slider__toggles .slider__toggle-3 {
+  background-color: transparent;
+  border: 3px solid $blue;
+}
+
+.slider__1:checked ~ .slider__list {
+  transform: translateX(0);
+}
+
+.slider__2:checked ~ .slider__list {
+  transform: translateX(-280px);
+
+  @media (min-width: $tablet-width) {
+    transform: translateX(-620px);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translateX(0);
+  }
+}
+
+.slider__3:checked ~ .slider__list {
+  transform: translateX(-560px);
+
+  @media (min-width: $tablet-width) {
+    transform: translateX(-1240px);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translateX(0);
+  }
+}
+
+.slider__2--tariff:checked ~ .slider__list,
+.slider__3--tariff:checked ~ .slider__list {
+  @media (min-width: $tablet-width) {
+    transform: translateX(0);
+  }
+}

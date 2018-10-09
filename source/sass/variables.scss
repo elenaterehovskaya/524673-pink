@@ -1,22 +1,33 @@
-// Основные цвета от светлому к темному
-$color-white:        #ffffff;
-$color-grey-light:   #f2f2f2;
-$color-grey:         #e5e5e5;
-$color-pink:         #d22856;
-$color-orange:       #f25b26;
-$color-green-bright: #3dc644;
-$color-green:        #2aab6d;
-$color-blue:         #283645;
-$color-blue-dark:    #1d2631;
-$color-black:        #000000;
+// Цвета от светлому к темному
+$white:          #ffffff;
+$grey-light:     #f2f2f2;
+$grey:           #e5e5e5;
+$pink:           #d22856;
+$orange:         #f25b26;
+$green-bright:   #3dc644;
+$green:          #2aab6d;
+$blue:           #283645;
+$blue-dark:      #1d2631;
+$black:          #000000;
 
-$text-light:         $color-white; // цвет текста светлый
-$text-pink:          $color-pink; // цвет текста розовый
-$text-dark:          $color-blue; // цвет текста тёмный
-$text-black:         $color-black; // цвет текста чёрный
+$text-white:     $white;
+$text-primary:   $pink;
+$text-dark:      $blue;
+$text-black:     $black;
+
+
+// Размеры шрифтов и межстрочных интервалов
+$font-size-xs:   12px;
+$font-size-sm:   14px;
+$font-size-md:   18px;
+$font-size-lg:   24px;
+$font-size-xl:   30px;
+
+$line-height-sm: 24px;
+$line-height-md: 30px;
 
 
 // Основные размеры экранов
-$mobile-width:       320px;
-$tablet-width:       660px;
-$desktop-width:      960px;
+$mobile-width:   320px;
+$tablet-width:   660px;
+$desktop-width:  960px;

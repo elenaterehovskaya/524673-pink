@@ -1,0 +1,25 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 130px;
+
+  @media (min-width: $desktop-width) {
+    min-width: 150px;
+  }
+}
+
+.copyright__text {
+  font-weight: 400;
+  font-size: $font-size-sm;
+  line-height: 18px;
+  color: $text-dark;
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size-md;
+  }
+}
+
+.copyright__logo-icon {
+  display: block;
+}

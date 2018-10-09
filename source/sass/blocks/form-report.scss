@@ -1,0 +1,200 @@
+.form-report {
+  box-sizing: border-box;
+  margin-top: 40px;
+  padding: 0;
+  border: none;
+  background-color: $grey-light;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 60px;
+    padding: 55px 55px 60px;
+    background-color: transparent;
+    border: 2px solid $grey;
+
+    &--application {
+      order: 2;
+    }
+
+    &--progress {
+      order: 4;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    background-color: transparent;
+    border: 2px solid $grey;
+
+    &--application {
+      width: 435px;
+      margin-top: 73px;
+      padding: 50px 0 63px;
+    }
+
+    &--progress {
+      margin-top: 53px;
+      padding: 50px 55px;
+    }
+  }
+}
+
+.form-report__caption {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 40px 40px 50px;
+  font-weight: 400;
+  font-size: $font-size-sm;
+  line-height: 18px;
+  text-align: center;
+  color: $text-primary;
+  text-transform: uppercase;
+  background-color: $grey-light;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    background-color: transparent;
+  }
+}
+
+.form-report__list {
+  @include list-reset;
+}
+
+.form-report__list--progress {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 820px;
+    height: 120px;
+  }
+}
+
+.form-report__item {
+  margin-bottom: 62px;
+
+  &:last-child {
+    margin-bottom: 50px;
+  }
+
+  &--application {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--application {
+      margin-bottom: 55px;
+    }
+
+    &--progress {
+      margin-bottom: 62px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--application {
+      margin-left: 75px;
+    }
+
+    &--progress {
+      width: (100% / 3);
+      margin-right: 35px;
+    }
+
+    &--progress:nth-child(2n) {
+      margin: 0;
+    }
+  }
+}
+
+.form-report__label {
+  position: relative;
+  display: block;
+  padding-left: 88px;
+  font: inherit;
+  font-size: $font-size-md;
+  color: $text-dark;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
+}
+
+.form-report__input--checkbox + .form-report__label::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  width: 35px;
+  height: 35px;
+  background-color: $white;
+  border: 2px solid $grey;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+  }
+}
+
+.form-report__input--checkbox:checked + .form-report__label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 28px;
+  width: 21px;
+  height: 8px;
+  border-left: 2px solid $pink;
+  border-bottom: 2px solid $pink;
+  transform: rotate(-45deg);
+
+  @media (min-width: $tablet-width) {
+    left: 10px;
+  }
+}
+
+.form-report__input--radio + .form-report__label::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  width: 36px;
+  height: 36px;
+  background-color: $white;
+  border: 2px solid $grey;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+  }
+}
+
+.form-report__input--radio:checked + .form-report__label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 32px;
+  width: 16px;
+  height: 16px;
+  background-color: $pink;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: 12px;
+  }
+}
+
+.form-report__input--radio:hover + .form-report__label::before,
+.form-report__input--checkbox:hover + .form-report__label::before {
+  border: 2px solid $blue;
+}
+
+.form-report__input--radio:focus + .form-report__label::before,
+.form-report__input--checkbox:focus + .form-report__label::before {
+  border: 2px solid $pink;
+}

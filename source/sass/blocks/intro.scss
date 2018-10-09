@@ -1,10 +1,81 @@
 .intro {
-  background: $color-blue-dark url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
+  min-height: 237px;
+  margin: 0 auto;
+  background: $blue-dark url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
+  background-size: auto 462px;
 
-  box-shadow: inset 0 0 0 1px red;
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    min-height: 440px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: auto 730px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    min-height: 395px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: auto 853px;
+  }
+}
+
+.intro__wrapper {
+  position: relative;
+  z-index: 1;
+  width: 320px;
+  min-height: 700px;
+  margin: 0 auto;
+  overflow-x: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    min-height: 853px;
+    padding: 0 10px;
+  }
+}
+
+.intro__title {
+  max-width: 280px;
+  margin: 0 auto;
+  padding-top: 100px;
+  font-weight: 300;
+  font-size: $font-size-lg;
+  text-align: center;
+  color: $text-white;
+
+  @media (min-width: $tablet-width) {
+    max-width: 520px;
+    padding-top: 178px;
+    font-size: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 780px;
+    padding-top: 172px;
+  }
 }
 
 .intro__image {
-  display: block;
-  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  top: 175px;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+    left: -20px;
+    top: auto;
+    bottom: 0;
+    max-width: 700px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 25px;
+    max-width: 1050px;
+  }
 }

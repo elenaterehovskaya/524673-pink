@@ -1,0 +1,136 @@
+.feedback__banner {
+  max-width: 280px;
+  margin: 0 auto;
+  padding-top: 46px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: $text-dark;
+
+  & span {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 520px;
+    padding-top: 90px;
+    font-size: 18px;
+
+    & span {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 780px;
+  }
+}
+
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+}
+
+.feedback__post {
+  margin-top: 47px;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    order: 6;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.feedback__button {
+  @include button-reset;
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: $text-light;
+  text-transform: uppercase;
+  background-color: $green;
+  border-radius: 3px;
+  outline: none;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba($text-light, 0.3);
+  }
+
+  &:disabled {
+    background-color: $grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 300px;
+  }
+}
+
+.feedback__footnote {
+  margin: 0;
+  padding-top: 38px;
+  font-weight: 400;
+  font-size: $font-size-sm;
+  line-height: $line-height-md;
+  text-align: center;
+  color: $text-dark;
+  text-transform: uppercase;
+
+  & sup {
+    font-size: 16px;
+    color: $text-primary;
+  }
+
+  & span {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    & span {
+      display: inline;
+    }
+  }
+}
