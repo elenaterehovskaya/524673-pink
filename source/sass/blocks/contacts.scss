@@ -118,8 +118,8 @@
     z-index: 1;
     width: 36px;
     height: 36px;
-    margin-left: -18px;
     background: url("../img/icon-map-marker.svg") no-repeat 0 0;
+    transform: translateX(-50%);
   }
 
   @media (min-width: $tablet-width) {
