@@ -22,7 +22,7 @@
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
-            <ul class="main-nav__list site-list">
+            <ul class="site-list main-nav__list">
               <li class="site-list__item">
                 <a class="site-list__link" href="index.html">Главная</a>
               </li>
@@ -44,12 +44,12 @@
     <main class="page-main">
 
       <section class="feedback">
-        <header class="feedback__intro intro">
+        <header class="intro feedback__intro">
           <h2 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
         </header>
         <p class="feedback__banner">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
 
-        <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
           <div class="form-info form-info--name feedback__info">
             <p class="form-info__item form-info__item--name">
               <label class="form-info__label form-info__label--name" for="field-surname">Фамилия:</label>
@@ -64,6 +64,38 @@
               <input class="form-info__input" id="field-patronymic" type="text" name="patronymic" value="" placeholder="Ну и отчество тоже">
             </p>
           </div>
+
+          <fieldset class="form-report form-report--application feedback__report">
+            <legend class="form-report__caption form-report__caption--application">С каким приложением путешествовали?</legend>
+            <ul class="form-report__list">
+              <li class="form-report__item form-report__item--application">
+                <input class="visually-hidden form-report__input form-report__input--radio" id="field-ios" type="radio" name="application" value="for-ios" checked>
+                <label class="form-report__label" for="field-ios">Pink для iOS</label>
+              </li>
+              <li class="form-report__item form-report__item--application">
+                <input class="visually-hidden form-report__input form-report__input--radio" id="field-android" type="radio" name="application" value="for-android">
+                <label class="form-report__label" for="field-android">Pink на Android</label>
+              </li>
+              <li class="form-report__item form-report__item--application">
+                <input class="visually-hidden form-report__input form-report__input--radio" id="field-windows-phone" type="radio" name="application" value="windows-phone">
+                <label class="form-report__label" for="field-windows-phone">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form-info form-info--contact feedback__info">
+            <legend class="form-info__caption">Контактная информация</legend>
+            <div class="form-info__list">
+              <p class="form-info__item form-info__item--contact">
+                <label class="form-info__label form-info__label--contact" for="field-phone">Номер телефона</label>
+                <input class="form-info__input form-info__input--contact" id="field-phone" type="tel" name="phone" value="" placeholder="Номер, пожалуйста">
+              </p>
+              <p class="form-info__item form-info__item--contact">
+                <label class="form-info__label form-info__label--contact" for="field-email">Адрес почты</label>
+                <input class="form-info__input form-info__input--contact" id="field-email" type="email" name="email" value="" placeholder="Введите почту *">
+              </p>
+            </div>
+          </fieldset>
 
           <fieldset class="form-report form-report--progress feedback__report">
             <legend class="form-report__caption">Ваши безбашенные достижения в путешествии</legend>
@@ -91,38 +123,6 @@
               <li class="form-report__item form-report__item--progress">
                 <input class="visually-hidden form-report__input form-report__input--checkbox" id="field-hotel" type="checkbox" name="defeated-hotel">
                 <label class="form-report__label form-report__label--progress" for="field-hotel">Разгромил отель</label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="form-info form-info--contact feedback__info">
-            <legend class="form-info__caption">Контактная информация</legend>
-            <div class="form-info__list">
-              <p class="form-info__item form-info__item--contact">
-                <label class="form-info__label form-info__label--contact" for="field-phone">Номер телефона</label>
-                <input class="form-info__input form-info__input--contact" id="field-phone" type="tel" name="phone" value="" placeholder="Номер, пожалуйста">
-              </p>
-              <p class="form-info__item form-info__item--contact">
-                <label class="form-info__label form-info__label--contact" for="field-email">Адрес почты</label>
-                <input class="form-info__input form-info__input--contact" id="field-email" type="email" name="email" value="" placeholder="Введите почту *">
-              </p>
-            </div>
-          </fieldset>
-
-          <fieldset class="form-report form-report--application feedback__report">
-            <legend class="form-report__caption form-report__caption--application">С каким приложением путешествовали?</legend>
-            <ul class="form-report__list">
-              <li class="form-report__item form-report__item--application">
-                <input class="visually-hidden form-report__input form-report__input--radio" id="field-ios" type="radio" name="application" value="for-ios" checked>
-                <label class="form-report__label" for="field-ios">Pink для iOS</label>
-              </li>
-              <li class="form-report__item form-report__item--application">
-                <input class="visually-hidden form-report__input form-report__input--radio" id="field-android" type="radio" name="application" value="for-android">
-                <label class="form-report__label" for="field-android">Pink на Android</label>
-              </li>
-              <li class="form-report__item form-report__item--application">
-                <input class="visually-hidden form-report__input form-report__input--radio" id="field-windows-phone" type="radio" name="application" value="windows-phone">
-                <label class="form-report__label" for="field-windows-phone">Windows Phone</label>
               </li>
             </ul>
           </fieldset>

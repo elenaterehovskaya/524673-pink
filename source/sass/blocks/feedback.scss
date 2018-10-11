@@ -51,6 +51,7 @@
 }
 
 .feedback__post {
+  order: 6;
   margin-top: 47px;
   margin-bottom: 15px;
 
@@ -58,7 +59,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    order: 6;
     margin-top: 70px;
     margin-bottom: 50px;
   }
@@ -79,11 +79,10 @@
   font-size: 18px;
   line-height: 20px;
   text-align: center;
-  color: $text-light;
+  color: $text-white;
   text-transform: uppercase;
   background-color: $green;
   border-radius: 3px;
-  outline: none;
   transition: 0.2s ease-in-out;
 
   &:hover {
@@ -91,7 +90,7 @@
   }
 
   &:active {
-    color: rgba($text-light, 0.3);
+    color: rgba($text-white, 0.3);
   }
 
   &:disabled {
