@@ -150,7 +150,7 @@
   }
 }
 
-.contacts__map-image {
+.contacts__map-picture {
   margin-top: -415px;
 
   @media (min-width: $tablet-width) {
@@ -159,5 +159,23 @@
 
   @media (min-width: $desktop-width) {
     margin-top: -60px;
+  }
+}
+
+.contacts__map-interactive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 230px;
+  border: 0;
+
+  @media (min-width: $tablet-width) {
+    height: 430px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 600px;
   }
 }
