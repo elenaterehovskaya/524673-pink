@@ -4,16 +4,22 @@
   padding: 0 20px;
   border: none;
 
+  &--name {
+    order: 1;
+  }
+
+  &--contact {
+    order: 3;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
 
     &--name {
-      order: 1;
       margin-top: 73px;
     }
 
     &--contact {
-      order: 3;
       margin-top: 60px;
       padding: 38px 58px 25px;
       background-color: transparent;

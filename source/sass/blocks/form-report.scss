@@ -5,6 +5,14 @@
   border: none;
   background-color: $grey-light;
 
+  &--application {
+    order: 4;
+  }
+
+  &--progress {
+    order: 2;
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 60px;
     padding: 55px 55px 60px;
