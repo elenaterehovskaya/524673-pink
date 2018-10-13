@@ -1,12 +1,15 @@
 .form-message {
   order: 5;
   margin-top: 32px;
-  padding: 10px 20px 0;
+  padding: 0 20px;
+  padding-top: 10px;
   border: none;
 
   @media (min-width: $tablet-width) {
     margin-top: 45px;
-    padding: 35px 58px 45px;
+    padding: 0;
+    padding-top: 35px;
+    padding-bottom: 45px;
     order: 5;
     border: 2px solid $grey;
     border-radius: 3px;
@@ -15,14 +18,15 @@
   @media (min-width: $desktop-width) {
     width: 100%;
     margin-top: 50px;
-    padding: 30px 58px 40px;
+    padding-top: 30px;
+    padding-bottom: 40px;
   }
 }
 
 .form-message__caption {
   max-width: 300px;
   margin: 0 auto;
-  padding: 0 35px;
+  padding: 0 30px;
   font-weight: 400;
   font-size: $font-size-sm;
   line-height: 30px;
@@ -32,11 +36,17 @@
   background-color: transparent;
 }
 
+.form-message__list {
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    padding: 0 58px;
+  }
+}
+
 .form-message__text {
   box-sizing: border-box;
   width: 100%;
   min-height: 200px;
-  margin: 0;
   padding: 15px 19px;
   font: inherit;
   font-weight: 400;

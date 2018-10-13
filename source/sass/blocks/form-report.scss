@@ -1,5 +1,4 @@
 .form-report {
-  box-sizing: border-box;
   margin-top: 40px;
   padding: 0;
   border: none;
@@ -15,7 +14,8 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 60px;
-    padding: 55px 55px 60px;
+    padding-top: 55px;
+    padding-bottom: 60px;
     background-color: transparent;
     border: 2px solid $grey;
 
@@ -29,19 +29,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
+    padding-top: 50px;
+    padding-bottom: 56px;
     background-color: transparent;
     border: 2px solid $grey;
 
     &--application {
       width: 435px;
-      margin-top: 73px;
-      padding: 50px 0 63px;
+      margin-top: 75px;
     }
 
     &--progress {
       margin-top: 53px;
-      padding: 50px 55px;
     }
   }
 }
@@ -49,7 +48,9 @@
 .form-report__caption {
   max-width: 450px;
   margin: 0 auto;
-  padding: 40px 40px 50px;
+  padding: 0 40px;
+  padding-top: 40px;
+  padding-bottom: 50px;
   font-weight: 400;
   font-size: $font-size-sm;
   line-height: 18px;
@@ -66,6 +67,10 @@
 
 .form-report__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 58px;
+  }
 }
 
 .form-report__list--progress {
@@ -105,10 +110,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    &--application {
-      margin-left: 75px;
-    }
-
     &--progress {
       width: (100% / 3);
       margin-right: 35px;

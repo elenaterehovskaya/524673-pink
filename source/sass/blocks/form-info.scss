@@ -1,5 +1,4 @@
 .form-info {
-  box-sizing: border-box;
   margin-top: 35px;
   padding: 0 20px;
   border: none;
@@ -21,7 +20,8 @@
 
     &--contact {
       margin-top: 60px;
-      padding: 38px 58px 25px;
+      padding-top: 38px;
+      padding-bottom: 25px;
       background-color: transparent;
       border: 2px solid $grey;
       border-radius: 3px;
@@ -36,7 +36,8 @@
 
     &--contact {
       width: 100%;
-      padding: 35px 58px 20px;
+      padding-top: 35px;
+      padding-bottom: 20px;
     }
   }
 }
@@ -48,7 +49,7 @@
     display: block;
     max-width: 300px;
     margin: 0 auto;
-    padding: 0 35px;
+    padding: 0 30px;
     font-weight: 400;
     font-size: $font-size-sm;
     line-height: 18px;
@@ -60,11 +61,16 @@
 }
 
 .form-info__list {
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 58px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 100%;
 
     & .form-info__item {
       width: 375px;
