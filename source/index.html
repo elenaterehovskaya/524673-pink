@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
 
   <body>
     <header class="page-header">
-      <!-- main-nav — класс блока, отвечающего за меню
-           main-nav--opened и main-nav--closed — классы, которые отвечают за открытие и закрытие меню -->
+      <!-- main-nav — класс блока, отвечающего за меню; main-nav--opened и main-nav--closed — отвечают за открытие и закрытие меню -->
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__container">
           <div class="main-nav__wrapper">
@@ -46,7 +50,11 @@
 
       <section class="intro">
         <div class="intro__wrapper">
-          <img class="intro__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="iPhone в руке">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+            <img class="intro__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="iPhone в руке">
+          </picture>
           <div class="intro__application application">
             <h2 class="application__title">Взгляните на&#160;жизнь иначе!</h2>
             <a class="application__button button" href="https://www.apple.com/ru/itunes/" target="_blank">Скачать приложение</a>
@@ -94,15 +102,17 @@
             </ul>
             <div class="advantages__photos">
               <picture>
-                <img class="advantages__image" src="img/iphone-screen-1-desktop@1x.png" alt="iPhone: Всем привет!">
+                <source media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+                <img class="advantages__image" src="img/iphone-screen-1-tablet@1x.png" srcset="img/iphone-screen-1-tablet@2x.png 2x" alt="iPhone: экран-1">
               </picture>
               <picture>
-                <img class="advantages__image" src="img/iphone-screen-2-desktop@1x.png" alt="iPhone: Всем привет!">
+                <source media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
+                <img class="advantages__image" src="img/iphone-screen-2-tablet@1x.png" srcset="img/iphone-screen-2-tablet@2x.png 2x" alt="iPhone: экран-2">
               </picture>
               <picture>
-                <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x">
-                <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x">
-                <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" alt="iPhone: Всем привет!">
+                <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+                <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+                <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="iPhone: экран-3">
               </picture>
             </div>
           </div>
@@ -231,7 +241,11 @@
         </ul>
         <div class="contacts__map">
           <div class="contacts__map-interactive" id="yandex-map"></div>
-          <img class="contacts__map-picture" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="Карта офиса">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+            <img class="contacts__map-picture" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта офиса">
+          </picture>
         </div>
       </section>
     </main>
