@@ -15,7 +15,6 @@ $text-primary:   $pink;
 $text-dark:      $blue;
 $text-black:     $black;
 
-
 // Размеры шрифтов и межстрочных интервалов
 $font-size-xs:   12px;
 $font-size-sm:   14px;
@@ -26,8 +25,11 @@ $font-size-xl:   30px;
 $line-height-sm: 24px;
 $line-height-md: 30px;
 
-
 // Основные размеры экранов
 $mobile-width:   320px;
 $tablet-width:   660px;
 $desktop-width:  960px;
+
+// Разрешение ретины
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

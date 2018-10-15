@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
 
   <body>
     <header class="page-header">
-      <!-- main-nav — класс блока, отвечающего за меню
-           main-nav--opened и main-nav--closed — классы, которые отвечают за открытие и закрытие меню -->
+      <!-- main-nav — класс блока, отвечающего за меню; main-nav--opened и main-nav--closed — отвечают за открытие и закрытие меню -->
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__container">
           <div class="main-nav__wrapper">
@@ -50,7 +54,11 @@
         <p class="photo__banner">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <h3 class="visually-hidden">Фотография Анны</h3>
         <a href="#">
-          <img class="photo__panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фотография Анны">
+          <picture class="photo__panorama">
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="photo__panorama-image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография Анны">
+          </picture>
         </a>
         <div class="photo__info photo__info--panorama">
           <b class="photo__author">Анна</b>
@@ -58,12 +66,15 @@
           <p class="photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
           <p class="photo__rating">Нравится: 215</p>
         </div>
-
         <ul class="photo__list">
           <li class="photo__item">
             <h3 class="visually-hidden">Фотография Левона</h3>
             <a href="#">
-              <img class="photo__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография Левона">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография Левона">
+              </picture>
             </a>
             <div class="photo__info">
               <b class="photo__author">Левон</b>
@@ -75,7 +86,11 @@
           <li class="photo__item">
             <h3 class="visually-hidden">Фотография Антона</h3>
             <a href="#">
-              <img class="photo__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография Антона">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография Антона">
+              </picture>
             </a>
             <div class="photo__info">
               <b class="photo__author">Антон</b>
@@ -87,7 +102,11 @@
           <li class="photo__item">
             <h3 class="visually-hidden">Фотография Бориса</h3>
             <a href="#">
-              <img class="photo__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография Бориса">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография Бориса">
+              </picture>
             </a>
             <div class="photo__info">
               <b class="photo__author">Борис</b>
@@ -99,7 +118,11 @@
           <li class="photo__item">
             <h3 class="visually-hidden">Фотография Сергея</h3>
             <a href="#">
-              <img class="photo__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография Сергея">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография Сергея">
+              </picture>
             </a>
             <div class="photo__info">
               <b class="photo__author">Сергей</b>
@@ -111,7 +134,11 @@
           <li class="photo__item">
             <h3 class="visually-hidden">Фотография Максима</h3>
             <a href="#">
-              <img class="photo__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография Максима">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография Максима">
+              </picture>
             </a>
             <div class="photo__info">
               <b class="photo__author">Максим</b>
@@ -123,7 +150,11 @@
           <li class="photo__item">
             <h3 class="visually-hidden">Фотография Надежды</h3>
             <a href="#">
-              <img class="photo__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография Надежды">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фотография Надежды">
+              </picture>
             </a>
             <div class="photo__info">
               <b class="photo__author">Надежда</b>
@@ -139,7 +170,11 @@
         <p class="download__banner">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
         <div class="download__photo">
           <h2 class="visually-hidden">Ваша фотография</h2>
-          <img class="download__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Ваше фото">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+            <img class="download__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Ваше фото">
+          </picture>
           <div class="download__tools">
             <ul class="download__list">
               <li class="download__item">

@@ -10,8 +10,7 @@
 
   <body>
     <header class="page-header">
-      <!-- main-nav — класс блока, отвечающего за меню
-           main-nav--opened и main-nav--closed — классы, которые отвечают за открытие и закрытие меню -->
+      <!-- main-nav — класс блока, отвечающего за меню; main-nav--opened и main-nav--closed — отвечают за открытие и закрытие меню -->
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__container">
           <div class="main-nav__wrapper">
@@ -129,8 +128,10 @@
 
           <fieldset class="form-message feedback__message">
             <legend class="form-message__caption">Опишите свои эмоции</legend>
-            <label for="field-message"></label>
-            <textarea class="form-message__text" id="field-message" name="message">Можно прям в красках, не стесняясь в выражениях</textarea>
+            <div class="form-message__list">
+              <label for="field-message"></label>
+              <textarea class="form-message__text" id="field-message" name="message">Можно прям в красках, не стесняясь в выражениях</textarea>
+            </div>
           </fieldset>
           <div class="feedback__post">
             <button class="feedback__button" type="submit">Отправить форму</button>
