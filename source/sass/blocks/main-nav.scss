@@ -31,12 +31,61 @@
 
   @media (min-width: $tablet-width) {
     min-height: 109px;
-    padding-top: 40px;
+    padding-top: 5px;
     padding-left: 20px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 20px;
     padding-left: 0;
+  }
+}
+
+.main-nav__logo-icon {
+  display: block;
+  width: 75px;
+  transition: 0.2s ease-in-out;
+  fill: $white;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: rgba($white, 0.3);
+  }
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 147px;
+    padding-top: 25px;
+
+    &--tablet {
+      display: block;
+    }
+
+    &--mobile,
+    &--desktop {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+    padding-left: 0;
+
+    &--desktop {
+      display: block;
+    }
+
+    &--mobile,
+    &--tablet {
+      display: none;
+    }
   }
 }
 
@@ -52,7 +101,7 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    top: 30px;
+    top: 40px;
   }
 
   @media (min-width: $desktop-width) {

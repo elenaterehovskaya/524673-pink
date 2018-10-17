@@ -1,4 +1,4 @@
-.download {
+.upload {
   width: 320px;
   margin: 0 auto;
 
@@ -12,7 +12,7 @@
   }
 }
 
-.download__banner {
+.upload__banner {
   width: 280px;
   margin: 0 auto;
   padding-top: 20px;
@@ -36,8 +36,9 @@
   }
 }
 
-.download__photo {
-  padding: 20px 20px 40px;
+.upload__photo {
+  padding-top: 20px;
+  padding-bottom: 40px;
   background-color: $grey-light;
 
   @media (min-width: $tablet-width) {
@@ -52,8 +53,9 @@
   }
 }
 
-.download__image {
+.upload__image {
   display: block;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -64,7 +66,7 @@
   }
 }
 
-.download__tools {
+.upload__filter {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -74,7 +76,7 @@
   }
 }
 
-.download__list {
+.upload__list {
   @include list-reset;
   width: 100%;
 
@@ -118,7 +120,7 @@
   }
 }
 
-.download__item {
+.upload__item {
   position: relative;
   height: 70px;
   margin: 30px 10px 60px;
@@ -188,29 +190,17 @@
   }
 }
 
-.download__tool {
+.upload__filter-button {
   position: relative;
   top: 5px;
   left: -5px;
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
   font-size: 0;
   background-color: transparent;
   border: none;
   outline: none;
   cursor: pointer;
-
-  &--crop {
-    background: url("../img/icon-editor-crop.svg") no-repeat 50% 50%;
-  }
-
-  &--fill {
-    background: url("../img/icon-editor-fill.svg") no-repeat 50% 50%;
-  }
-
-  &--contrast {
-    background: url("../img/icon-editor-contrast.svg") no-repeat 50% 50%;
-  }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
     top: 15px;
@@ -220,58 +210,110 @@
   }
 }
 
-.download__button-post {
-  margin-top: 38px;
-  color: $text-primary;
-  border: 3px solid $pink;
+.upload__filter-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: $pink;
 
-  &:hover,
-  &:focus {
-    color: $text-white;
-    background-color: $pink;
-  }
-
-  &:active {
-    color: rgba($text-white, 0.3);
+  &--fill,
+  &--contrast {
+    fill: rgba($blue, 0.3);
   }
 
   @media (min-width: $tablet-width) {
-    width: 260px;
-    margin: 0 auto;
-    margin-right: 13px;
-    margin-top: 67px;
+    width: 65%;
+
+    &--fill {
+      fill: $pink;
+    }
+
+    &--contrast {
+      width: 45%;
+      fill: $pink;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 185px;
-    margin: 0;
-    margin-top: 145px;
+    width: auto;
   }
 }
 
+.upload__filter-button:hover .upload__filter-icon {
+  fill: rgba($blue, 0.5);
+}
 
-.download__button-cancel {
-  margin-top: 10px;
-  color: rgba($text-dark, 0.1);
-  border: 3px solid rgba($blue, 0.1);
+.upload__button {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  padding: 16px 0;
+  font-weight: 700;
+  font-size: $font-size-md;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 
-  &:hover,
-  &:focus {
-    color: rgba($text-dark, 0.3);
-    border: 3px solid rgba($blue, 0.3);
+  &--post {
+    margin-top: 38px;
+
+    color: $pink;
+
+    border: 3px solid $pink;
+
+    &:hover,
+    &:focus {
+      color: $white;
+
+      background-color: $pink;
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+    }
   }
 
-  &:active {
-    color: rgba($text-white, 0.3);
-    background-color: rgba($blue, 0.3);
-    border: 3px solid rgba($blue, 0);
+  &--cancel {
+    margin-top: 10px;
+
+    color: rgba($blue, 0.1);
+
+    border: 3px solid rgba($blue, 0.1);
+
+    &:hover,
+    &:focus {
+      color: rgba($blue, 0.3);
+
+      border: 3px solid rgba($blue, 0.3);
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+
+      background-color: rgba($blue, 0.3);
+      border: 3px solid rgba($blue, 0);
+    }
   }
 
   @media (min-width: $tablet-width) {
     width: 260px;
     margin: 0 auto;
     margin-right: 13px;
-    margin-top: 25px;
+
+    &--post {
+      margin-top: 67px;
+    }
+
+    &--cancel {
+      margin-top: 25px;
+    }
   }
 
   @media (min-width: $desktop-width) {
