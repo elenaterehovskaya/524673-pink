@@ -49,3 +49,31 @@
   width: 147px;
   height: auto;
 }
+
+.page-footer__logo-icon {
+  transition: 0.3s ease-in-out;
+  fill: $blue;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: $blue;
+    opacity: 0.3;
+  }
+
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+}

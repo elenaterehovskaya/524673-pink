@@ -60,6 +60,11 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 10px;
+
+    &:active {
+      color: $white;
+      opacity: 0.3;
+    }
   }
 }
 

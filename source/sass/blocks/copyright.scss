@@ -22,4 +22,14 @@
 
 .copyright__logo-icon {
   display: block;
+  fill: $pink;
+
+  &:hover,
+  &:focus {
+    fill: $blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
