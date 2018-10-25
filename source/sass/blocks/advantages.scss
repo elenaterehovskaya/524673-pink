@@ -3,8 +3,10 @@
 }
 
 .advantages__slogan {
-  width: 280px;
-  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0 20px;
   padding-top: 40px;
   font-weight: 300;
   font-size: $font-size-lg;
@@ -15,7 +17,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 100%;
     padding-top: 45px;
     font-size: 40px;
 
@@ -47,14 +48,14 @@
 .advantages__wrapper {
   width: 280px;
   margin: 0 auto;
-  padding-top: 55px;
+  padding-top: 90px;
   overflow-y: hidden;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     flex-wrap: wrap;
     width: 620px;
     padding-top: 0;
@@ -93,7 +94,6 @@
 
 .advantages__title {
   margin: 0;
-  padding-top: 34px;
   font-weight: 700;
   font-size: $font-size-md;
   line-height: $line-height-sm;
@@ -109,6 +109,7 @@
 .advantages__description {
   margin: 0;
   padding-top: 10px;
+  padding-bottom: 34px;
   font-weight: 400;
   font-size: $font-size-sm;
   line-height: $line-height-sm;

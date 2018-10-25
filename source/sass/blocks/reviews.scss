@@ -54,6 +54,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column-reverse;
+    justify-content: flex-end;
   }
 }
 

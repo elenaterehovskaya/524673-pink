@@ -1,14 +1,14 @@
-var menu = document.querySelector(".main-nav");
-var button = document.querySelector(".main-nav__toggle");
+var navMain = document.querySelector(".main-nav");
+var navToggle = document.querySelector(".main-nav__toggle");
 
-menu.classList.remove("main-nav--nojs");
+navMain.classList.remove("main-nav--nojs");
 
-button.addEventListener("click", function() {
-  if (menu.classList.contains("main-nav--closed")) {
-    menu.classList.remove("main-nav--closed");
-    menu.classList.add("main-nav--opened");
+navToggle.addEventListener("click", function() {
+  if (navMain.classList.contains("main-nav--closed")) {
+    navMain.classList.remove("main-nav--closed");
+    navMain.classList.add("main-nav--opened");
   } else {
-    menu.classList.add("main-nav--closed");
-    menu.classList.remove("main-nav--opened");
+    navMain.classList.add("main-nav--closed");
+    navMain.classList.remove("main-nav--opened");
   }
 });

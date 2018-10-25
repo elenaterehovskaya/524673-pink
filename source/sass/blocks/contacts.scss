@@ -110,18 +110,6 @@
     background: url("../img/bg-triangle-white-footer.svg") no-repeat 50% 0;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 123px;
-    left: 50%;
-    z-index: 1;
-    width: 36px;
-    height: 36px;
-    background: url("../img/icon-map-marker.svg") no-repeat 0 0;
-    transform: translateX(-50%);
-  }
-
   @media (min-width: $tablet-width) {
     height: 430px;
     margin-top: -35px;
@@ -129,10 +117,6 @@
     &::before {
       height: 125px;
       background-size: cover;
-    }
-
-    &::after {
-      top: 250px;
     }
   }
 
@@ -142,10 +126,6 @@
 
     &::before {
       height: 200px;
-    }
-
-    &::after {
-      top: 365px;
     }
   }
 }

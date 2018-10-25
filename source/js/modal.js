@@ -1,6 +1,6 @@
 var form = document.querySelector(".feedback__form");
-var surname = form.querySelector("[name=surname]");
-var username = form.querySelector("[name=username]");
+var surName = form.querySelector("[name=surname]");
+var userName = form.querySelector("[name=username]");
 var email = form.querySelector("[name=email]");
 
 var openError = document.querySelector(".modal-feedback--error");
@@ -9,11 +9,11 @@ var closeError = openError.querySelector(".modal-feedback__button");
 var closeSent = openSent.querySelector(".modal-feedback__button");
 
 form.addEventListener("submit", function (evt) {
-  if (!surname.value || !username.value || !email.value) {
+  if (!surName.value || !userName.value || !email.value) {
     evt.preventDefault();
     openError.classList.add("modal-feedback--show");
-    surname.classList.add("form-info__input--error");
-    username.classList.add("form-info__input--error");
+    surName.classList.add("form-info__input--error");
+    userName.classList.add("form-info__input--error");
     email.classList.add("form-info__input--error");
   } else {
     openSent.classList.add("modal-feedback--show");
