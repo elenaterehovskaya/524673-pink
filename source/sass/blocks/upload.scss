@@ -25,7 +25,7 @@
 
   @media (min-width: $tablet-width) {
     width: 450px;
-    padding-top: 45px;
+    padding-top: 44px;
     padding-bottom: 70px;
     font-size: $font-size-md;
   }
@@ -45,7 +45,9 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 55px 20px;
+    padding: 0 20px;
+    padding-top: 55px;
+    padding-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -90,7 +92,7 @@
       content: "";
       position: absolute;
       top: 125px;
-      right: 20px;
+      right: 40px;
       width: 240px;
       height: 2px;
       background-color: $blue;
@@ -100,7 +102,7 @@
       content: "";
       position: absolute;
       top: 125px;
-      right: 55px;
+      right: 75px;
       width: 10px;
       height: 10px;
       margin-top: -6px;
@@ -226,6 +228,7 @@
     width: 65%;
 
     &--fill {
+      top: 25px;
       fill: $pink;
     }
 
@@ -237,6 +240,11 @@
 
   @media (min-width: $desktop-width) {
     width: auto;
+
+    &--fill {
+      top: 50%;
+      fill: $pink;
+    }
   }
 }
 
@@ -248,7 +256,7 @@
   display: block;
   width: 280px;
   margin: 0 auto;
-  padding: 16px 0;
+  padding: 17px 0;
   font-weight: 700;
   font-size: $font-size-md;
   line-height: 18px;
@@ -308,7 +316,7 @@
     margin-right: 13px;
 
     &--post {
-      margin-top: 67px;
+      margin-top: 65px;
     }
 
     &--cancel {
