@@ -122,8 +122,7 @@
     box-shadow: 0 10px 0 0 $white, 0 20px 0 0 $white;
   }
 
-  &:hover::before,
-  &:focus::before {
+  &:hover::before {
     background-color: $pink;
     box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
   }
@@ -155,9 +154,7 @@
   }
 
   &:hover::before,
-  &:hover::after,
-  &:focus::before,
-  &:focus::after {
+  &:hover::after {
     background-color: $pink;
   }
 
