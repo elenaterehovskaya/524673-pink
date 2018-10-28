@@ -168,3 +168,18 @@
     }
   }
 }
+
+.advantages__image img {
+  width: 157px;
+  height: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 481px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 292px;
+    height: 302px;
+  }
+}

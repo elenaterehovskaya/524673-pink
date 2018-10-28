@@ -149,10 +149,12 @@
   margin-top: -415px;
 
   @media (min-width: $tablet-width) {
+    width: 700px;
     margin-top: -290px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1200px;
     margin-top: -60px;
   }
 }
