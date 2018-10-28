@@ -16,7 +16,7 @@
   @media (min-width: $desktop-width) {
     position: relative;
     width: 940px;
-    padding: 185px 0 0;
+    padding: 180px 0 0;
 
     &::before {
       content: "";
@@ -43,18 +43,28 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 2820px;
+    display: block;
+    width: 100%;
   }
 }
 
 .reviews__item {
-  position: relative;
   width: 100%;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.reviews__item--active {
+  @media (min-width: $desktop-width) {
+    display: flex;
   }
 }
 

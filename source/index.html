@@ -23,7 +23,7 @@
 
     <header class="page-header">
       <!-- main-nav--opened и main-nav--closed — отвечают за открытие и закрытие меню -->
-      <nav class="main-nav main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo" href="#" aria-label="Логотип Pink">
             <svg class="main-nav__logo-icon main-nav__logo-icon--mobile" width="74.426" height="22.859">
@@ -165,7 +165,7 @@
           <label class="slider__toggle-3" for="review-3"></label>
         </div>
         <ul class="reviews__list slider__list">
-          <li class="reviews__item slider__item">
+          <li class="reviews__item reviews__item--active slider__item">
             <p class="reviews__author">Николай Петров
               <span>25 лет, водитель трамвая</span>
             </p>
@@ -318,6 +318,7 @@
 
     <script src="js/menu.min.js"></script>
     <script src="js/map.min.js"></script>
+    <script src="js/slider.min.js"></script>
 
   </body>
 </html>
