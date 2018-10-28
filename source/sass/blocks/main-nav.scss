@@ -1,36 +1,37 @@
 .main-nav {
   position: relative;
   z-index: 10;
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+    margin: 0 auto;
+  }
 }
 
-.main-nav__container {
+.main-nav__wrapper {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba($black, 0.3);
-}
 
-.main-nav__wrapper {
   @media (min-width: $desktop-width) {
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 940px;
-    margin: 0 auto;
+    align-items: flex-start;
     padding: 0 10px;
   }
 }
 
 .main-nav__logo {
   box-sizing: border-box;
-  display: block;
+  display: inline-block;
   min-height: 67px;
   padding-top: 22px;
   padding-left: 20px;
 
   @media (min-width: $tablet-width) {
-    min-height: 109px;
+    min-height: 105px;
     padding-top: 5px;
     padding-left: 20px;
   }
@@ -101,7 +102,7 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    top: 40px;
+    top: 44px;
   }
 
   @media (min-width: $desktop-width) {
@@ -125,6 +126,10 @@
   &:focus::before {
     background-color: $pink;
     box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
+  }
+
+  &:active::before {
+    opacity: 0.3;
   }
 }
 
@@ -168,10 +173,9 @@
   }
 }
 
-.main-nav--opened .main-nav__container {
+.main-nav--opened .main-nav__wrapper {
   @media (max-width: $desktop-width - 1px) {
     position: static;
-    height: 258px;
     background-color: $blue;
   }
 }
@@ -186,7 +190,7 @@
       display: block;
     }
 
-    & .main-nav__container {
+    & .main-nav__wrapper {
       position: static;
       height: 258px;
       background-color: $blue;

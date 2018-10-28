@@ -7,7 +7,8 @@
 
   @media (min-width: $tablet-width) {
     width: 300px;
-    padding-top: 200px;
+    padding: 0;
+    padding-top: 205px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,7 +22,7 @@
   @media (min-width: $tablet-width) {
     display: block;
     margin: 0;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     font-weight: 300;
     font-size: 40px;
     text-align: center;
@@ -30,13 +31,13 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 30px;
-
     font-size: 50px;
+    line-height: 60px;
   }
 }
 
 .application__button {
-  margin-top: 26px;
+  margin-top: 30px;
   color: $text-white;
   border: 3px solid $white;
 
@@ -63,14 +64,18 @@
 }
 
 .application__item {
-  padding: 33px 17px 17px;
+  padding: 0 17px;
+  padding-top: 33px;
+  padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
-    padding: 44px 17px 33px;
+    padding-top: 44px;
+    padding-bottom: 33px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 67px 17px 50px;
+    padding-top: 67px;
+    padding-bottom: 50px;
   }
 }
 

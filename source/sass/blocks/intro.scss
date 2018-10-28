@@ -1,6 +1,7 @@
 .intro {
   min-height: 237px;
   margin: 0 auto;
+  margin-top: -70px;
   background: $blue-dark url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
   background-size: auto 462px;
 
@@ -11,11 +12,16 @@
   @media (min-width: $tablet-width) {
     width: 660px;
     min-height: 440px;
+    margin-top: -110px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: auto 730px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+
+    &--main {
+      background-size: cover;
     }
   }
 
@@ -41,6 +47,7 @@
 
   @media (min-width: $tablet-width) {
     width: 620px;
+    min-height: 725px;
     padding: 0 20px;
   }
 
@@ -62,13 +69,14 @@
 
   @media (min-width: $tablet-width) {
     max-width: 520px;
-    padding-top: 178px;
+    padding-top: 180px;
     font-size: 50px;
+    line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 780px;
-    padding-top: 172px;
+    padding-top: 175px;
   }
 }
 

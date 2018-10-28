@@ -2,13 +2,8 @@
   padding-bottom: 50px;
   background: $grey-light url("../img/bg-triangle-white.svg") no-repeat 100% 0;
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
-  }
-
   @media (min-width: $desktop-width) {
     margin-top: 35px;
-    margin-bottom: 67px;
     background-size: cover;
   }
 }
@@ -17,17 +12,22 @@
   position: relative;
   width: 280px;
   margin: 0 auto;
-  padding: 95px 20px 50px;
+  padding: 0 20px;
+  padding-top: 97px;
+  padding-bottom: 52px;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
     width: 620px;
-    padding: 90px 20px 22px;
+    padding-top: 92px;
+    padding-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
     width: 940px;
-    padding: 155px 10px 45px;
+    padding: 0 10px;
+    padding-top: 160px;
+    padding-bottom: 45px;
   }
 }
 
@@ -200,7 +200,7 @@
 
   @media (min-width: $desktop-width) {
     top: 17px;
-    right: 100px;
+    right: 105px;
   }
 }
 

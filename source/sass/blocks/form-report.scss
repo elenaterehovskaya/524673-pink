@@ -30,9 +30,6 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 50px;
-    padding-bottom: 56px;
-    background-color: transparent;
-    border: 2px solid $grey;
 
     &--application {
       width: 435px;
@@ -40,7 +37,8 @@
     }
 
     &--progress {
-      margin-top: 53px;
+      width: 100%;
+      margin-top: 55px;
     }
   }
 }
@@ -69,18 +67,21 @@
   @include list-reset;
 
   @media (min-width: $tablet-width) {
-    padding: 0 58px;
+    padding-left: 58px;
   }
-}
 
-.form-report__list--progress {
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    width: 820px;
-    height: 120px;
+    padding-left: 80px;
+
+    &--progress {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      align-content: space-between;
+      height: 110px;
+      padding-left: 58px;
+    }
   }
 }
 
@@ -111,8 +112,8 @@
 
   @media (min-width: $desktop-width) {
     &--progress {
-      width: (100% / 3);
-      margin-right: 35px;
+      width: calc(100% / 3 - 25px);
+      margin-right: 37px;
     }
 
     &--progress:nth-child(2n) {
