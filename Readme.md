@@ -1,60 +1,54 @@
-# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Проект «Пинк»
 
-* Студент: [Елена Тереховская](https://up.htmlacademy.ru/adaptive/15/user/524673).
-* Наставник: [без наставника].
+* Вёрстка: [Елена Тереховская](https://github.com/elenaterehovskaya).
+* Макет: [HTML Academy](https://htmlacademy.ru).
+
+## Описание
+
+* Адаптивность сетки: _мобильная, планшетная и десктопная версии_.
+* Адаптивность графики: _ретинизация, векторные изображения_.
+* Используемая методология: _БЭМ_.
+* Используемый препроцессор: _Sass_.
+* Используемый инструмент автоматизации: _Gulp_.
+* Используемые фреймворки: _нет_.
+* Кроссбраузерность: _Chrome, Firefox, Opera, Safari, Edge и IE11_.
+
+## Ссылки
+
+#### Главная страница: <a href="https://elenaterehovskaya.github.io/pink" target="_blank">https://elenaterehovskaya.github.io/pink</a>
+
+#### страница с фотографиями пользователей: <a href="https://elenaterehovskaya.github.io/pink/photo.html" target="_blank">https://elenaterehovskaya.github.io/pink/photo.html</a>
+
+#### страница с формой: <a href="https://elenaterehovskaya.github.io/pink/form.html" target="_blank">https://elenaterehovskaya.github.io/pink/form.html</a>
+
+####
 
 ---
 
-**Обратите внимание, что папка с вашими исходными файлами — `source/`.**
-
-Полезный файл:
-
-- [Contributing.md](Contributing.md) — руководство по внесению изменений.
-
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
+<p>
+  <img width="288" alt="Главная страница-desktop «Пинк»" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/pink-index-desktop.jpg">
+  <img valign="top" width="288" alt="Страница-desktop с фотографиями пользователей" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/pink-photo-desktop.jpg">
+  <img valign="top" width="288" alt="Страница-desktop с формой" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/pink-form-desktop.jpg">
+</p>
 
 ---
 
-### Памятка
+<p>
+  <img width="250" alt="Главная страница-tablet «Пинк»" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/pink-index-tablet.jpg">
+  <img valign="top" width="250" alt="Страница-tablet с фотографиями пользователей" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/pink-photo-tablet.jpg">
+  <img valign="top" width="250" alt="Страница-tablet с формой" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/pink-form-tablet.jpg">
+</p>
 
-#### 1. Зарегистрируйтесь на Гитхабе
+---
 
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
-
-#### 2. Создайте форк
-
-Откройте репозиторий и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
-
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/15455696/52f9152e-206d-11e6-9e2d-5c6a68f29419.png">
-
-Получится вот так:
-
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/15455697/531c27c6-206d-11e6-80d5-365e13dd691d.png">
-
-#### 3. Клонируйте репозиторий на свой компьютер
-
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
-
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/26306255/51a677ea-3efb-11e7-8f8f-b2f929bfda21.png">
-
-Клонировать репозиторий можно так:
-
-```
-git clone SSH-адрес_вашего_форка
-```
-
-Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
-
-#### 4. Начинайте обучение!
+<p>
+  <img width="225" alt="Главная страница-mobile «Пинк»" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/pink-index-mobile.jpg">
+  <img valign="top" width="225" alt="Страница-mobile с фотографиями пользователей" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/pink-photo-mobile.jpg">
+  <img valign="top" width="225" alt="Страница-mobile с формой" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/pink-form-mobile.jpg">
+</p>
 
 ---
 
 <a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
 
 Репозиторий создан для обучения на интенсивном онлайн‑курсе «[Профессиональный HTML и CSS](https://htmlacademy.ru/intensive/adaptive)», уровень 2 от [HTML Academy](https://htmlacademy.ru).
-
-[travis-image]: https://travis-ci.com/htmlacademy-adaptive/524673-pink.svg?branch=master
-[travis-url]: https://travis-ci.com/htmlacademy-adaptive/524673-pink
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/524673-pink/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/524673-pink?type=dev
