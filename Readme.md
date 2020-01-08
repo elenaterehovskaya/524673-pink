@@ -25,15 +25,9 @@
 
 ---
 
-<a href="https://elenaterehovskaya.github.io/pink" target="_blank">
-  <img width="288" alt="Главная страница-desktop «Пинк»" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/pink-index-desktop.jpg">
-</a>
-<a href="https://elenaterehovskaya.github.io/pink/photo.html" target="_blank">
-  <img width="288" alt="Страница-desktop с фотографиями пользователей" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/pink-photo-desktop.jpg">
-</a>
-<a href="https://elenaterehovskaya.github.io/pink/form.html" target="_blank">
-  <img width="288" alt="Страница-desktop с формой" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/pink-form-desktop.jpg">
-</a>
+<a href="https://elenaterehovskaya.github.io/pink" target="_blank"><img align="top" width="288" alt="Главная страница-desktop «Пинк»" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/pink-index-desktop.jpg"></a>
+<a href="https://elenaterehovskaya.github.io/pink/photo.html" target="_blank"><img align="top" width="288" alt="Страница-desktop с фотографиями пользователей" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/pink-photo-desktop.jpg"></a>
+<a href="https://elenaterehovskaya.github.io/pink/form.html" target="_blank"><img align="top" width="288" alt="Страница-desktop с формой" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/pink-form-desktop.jpg"></a>
 
 ---
 
